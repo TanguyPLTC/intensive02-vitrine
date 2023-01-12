@@ -29,6 +29,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Marketing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/analyse.html">Analyse</a></li>
+                </ul>
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#About">A propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Prototypes">Prototypes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Site">Site Web</a></li>
@@ -88,8 +92,8 @@
                     le bureau ou la salle de réunion proposé à travers ce projet.
 
                     Le second prototype est un site web permettant de réserver les “cubes”. Le prototype permettra de tester le site d’un
-                    point de vue entreprise. Le code source et les instructions d’utilisation du site peuvent être trouvés dans ce lien
-                    GitHub : (insérer le lien).</p>
+                    point de vue entreprise. Le code source et les instructions d’utilisation du site peuvent être trouvés <a
+                        href="https://github.com/TanguyPLTC/projet_intensif_g02">ici</a>.</p>
             </div>
         </div>
     </div>
@@ -102,27 +106,27 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
             <div class="row" style="text-align: center;">
-                <p>Le site pour le programme “Plan Cubes Collaboratifs” est conçue pour faciliter la réservation et la gestion des espaces
+                <p class="text-start">Le site pour le programme “Plan Cubes Collaboratifs” est conçue pour faciliter la réservation et la
+                    gestion des espaces
                     de travail “cube” créés dans le cadre du programme. Le site comporte trois sections principales: une pour les employés,
-                    une pour les entreprises et une pour les organisations communautaires.</p>
+                    une pour les entreprises et une pour les communautés de communes.</p>
             </div>
             <div class="row" style="text-align: center;">
                 <div class="col-md-4">
-                    <p>
+                    <p class="text-start">
                         La section employé permet aux employés d’être informés de l’emplacement de l’espace de travail réservé par leur
                         entreprise.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <p>
-                        La section entreprise permet aux entreprises de spécifier leurs besoins, tels que le nombre d’employés et d’espaces
-                        de travail nécessaires à un emplacement donné. Il permet également aux entreprises de visualiser les bâtiments
-                        disponibles sur une carte qui répondent à leurs besoins et de faire des réservations hebdomadaires dans le même
-                        bâtiment.
+                    <p class="text-start">
+                        La section entreprise permet aux entreprises de réserver un bâtiment en spécifiant leurs besoins,
+                        tels que le nombre d’employés, les dates de début et de fin, à un emplacement donné.
+                        Les entreprises réservent à travers une carte interractive et de visualiser les bâtiments disponibles.
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <p>
+                    <p class="text-start">
                         La section communauté permet aux organisations communautaires de gérer les bâtiments vacants, y compris leur état
                         (électricité, eau, chauffage) et de consulter le taux d’utilisation des bâtiments et les problèmes signalés. Il
                         permettra également d’avoir une meilleure vue sur le taux d’occupation, de cette façon, la communauté pourra
@@ -151,41 +155,44 @@
                 <div class="col-md-4">
                     <img class="img-fluid rounded-circle" alt="" src="assets/img/about/co-working.png">
                     <h1>Front-end</h1>
-                    <p>Le frontend de l’application utilise Svelte comme framework JavaScript. Il permet de construire des composants
-                        interactifs en utilisant une syntaxe simple et intuitive, ce qui facilite la création d’interfaces utilisateur.
-                        Svelte utilise un modèle de programmation basé sur les composants, ce qui permet de structurer efficacement le code
-                        et de faciliter la maintenance et l’évolution de l’application.
+                    <p class="text-start">Le frontend de l’application utilise Svelte comme framework JavaScript. Il permet de construire
+                        des composants interactifs en utilisant une syntaxe simple et intuitive, ce qui facilite la création d’interfaces
+                        utilisateur.
+                        Svelte utilise un modèle de programmation basé sur les composants, ce qui permet de structurer
+                        efficacement le code et de faciliter la maintenance et l’évolution de l’application.
 
-                        Svelte utilise également Node.js pour le développement, ce qui permet d’utiliser les mêmes outils et bibliothèques
-                        que pour le backend.</p>
+                        Nous utilisons Node.js durant le développement pour nous accélérer la gestion des dépendances.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="img-fluid rounded-circle" alt="" src="assets/img/about/co-working.png">
                     <h1>Back-end</h1>
-                    <p>Le backend de l’application utilise NestJS. Il s’agit d’un framework basé sur Node.JS et TypeScript qui fournit une
-                        plateforme pour la création d’applications côté serveur efficaces et évolutives. Il permet de structurer le code de
+                    <p class="text-start">Le backend de l’application utilise NestJS. Il s’agit d’un framework basé sur Node.js et
+                        TypeScript qui fournit une
+                        plateforme pour la création d’applications côté serveur efficace et évolutive. Il permet de structurer le code de
                         manière modulaire et de faciliter la mise en place d’un système d’authentification et d’autorisation. Il offre
                         également des outils pour faciliter la gestion des requêtes HTTP, des données et des erreurs.
 
                         Pour la base de données, l’application utilise SQLite pour la version MVP (Minimum Viable Product). SQLite est un
                         système de gestion de base de données relationnel qui est léger et facile à configurer, ce qui le rend adapté pour
                         la version initiale de l’application. Cependant, pour la version de production, il est prévu de passer à Postgres ou
-                        MYSQL qui sont des systèmes de gestion de base de données plus robustes et adaptés pour des applications de grande
+                        MySQL qui sont des systèmes de gestion de base de données plus robustes et adaptés pour des applications de grande
                         envergure.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="img-fluid rounded-circle" alt="" src="assets/img/about/co-working.png">
                     <h1>Déploiement</h1>
-                    <p>Pour le déploiement de l’application, Nginx est utilisé en tant que serveur pour gérer les fichiers statiques. Nginx
+                    <p class="text-start">Pour le déploiement de l’application, Nginx est utilisé en tant que serveur pour gérer les
+                        fichiers statiques mais aussi en tant que reverse-proxy. Nginx
                         est un serveur web populaire et très performant qui est souvent utilisé pour gérer les sites statiques et les
-                        applications web. Il peut également être utilisé comme proxy inverse pour rediriger les requêtes vers d’autres
+                        applications web. Le mode reverse-proxy permet de l'utiliser pour rediriger les requêtes vers d’autres
                         serveurs, ce qui permet de séparer les différentes parties de l’application sur des serveurs différents.
 
                         PM2 est utilisé en tant que gestionnaire de processus pour le backend de l’application. Il permet de maintenir
-                        l’application en cours d’exécution en cas d’erreur et de redémarrer automatiquement les processus en cas de besoin.
+                        l’application en cours d’exécution et en cas d’erreur de la redémarrer automatiquement les processus en cas de
+                        besoin.
                         Il offre également des fonctionnalités telles que la surveillance des performances et la gestion des versions pour
                         faciliter la maintenance et les mises à jour de l’application. En utilisant PM2, les développeurs peuvent s’assurer
-                        que l’application est toujours disponible et fonctionne correctement, même en cas de problèmes.</p>
+                        que l’application est toujours disponible et fonctionne correctement.</p>
                 </div>
             </div>
         </div>
