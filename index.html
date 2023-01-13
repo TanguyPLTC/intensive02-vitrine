@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/videoModal.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -41,10 +42,26 @@
         <div class="container">
             <div class="masthead-subheading">Projet Cubes Collaboratifs</div>
             <div class="masthead-heading text-uppercase">Marketing</div>
+            <button type="button" class="btn btn-primary video-btn btn-lg" data-bs-toggle="modal"
+                data-src="https://www.youtube.com/embed/TW7spRl2H6c" data-bs-target="#videoModal">
+                Afficher la vidéo de présentation
+            </button>
         </div>
     </header>
 
-
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </button>
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div style="padding: 2%;">
         <div class="row">
@@ -203,5 +220,6 @@
 </body>
 
 <script src="js/scripts.js"></script>
+<script src="js/videoModal.js"></script>
 
 </html>
