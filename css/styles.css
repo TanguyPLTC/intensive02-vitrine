@@ -153,10 +153,10 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
+/* p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
+} */
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -176,6 +176,7 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+  list-style-type: disc;
 }
 
 ol,
@@ -236,11 +237,11 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: blue;
   text-decoration: underline;
 }
 a:hover {
-  color: #cca000;
+  color: #212529;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
